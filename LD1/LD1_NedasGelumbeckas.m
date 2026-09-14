@@ -51,3 +51,23 @@ A = [1 2 3; 4 5 6; 7 8 9];
 [m,n] = size(A);
 max_stulpeliai = max(A);
 max_reiksme = max(A(:));
+
+%% Papildomos uzduotys:
+%1-3 uzd
+clear all
+N = 1;
+v = N+1:0.5:N+4;
+A = [N N+1 N+2;
+     N+3 N+4 N+5;
+     N+6 N+7 N+8];
+%4 uzd
+a = A(3,2)
+b = A([2 3], [1 2])
+c = A([1 3],[1 3])
+
+%5
+v = v(1:3);
+
+A = [A v']
+
+
