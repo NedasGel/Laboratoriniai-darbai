@@ -1,0 +1,65 @@
+% Vardas: Nedas
+% Pavardė: Gelumbeckas
+% Grupė: EDIF-25/2
+% Data: 2026-09-14
+
+%% 7 punktas – MATLAB skriptas
+
+x = 1:32;
+y = x.^2;
+
+plot(x,y, 'o-r', x, y/3, 'xb')
+title('Dvi funkcijos')
+xlabel('X-ai')
+ylabel('F_1 [-0-]   |   F_2 [-x-]')
+
+
+%% 8 punktas – pagalbos paieška
+
+% help sin
+% help plot
+% help title
+
+% doc sin
+% doc plot
+% doc title
+
+
+%% 9 punktas – linspace, size, max
+
+% help linspace
+% help size
+% help max
+% doc linspace
+% doc size
+% doc max
+
+
+%% Funkcijų naudojimo pavyzdžiai
+clear all
+% linspace – sukuria 10 tolygiai išdėstytų skaičių nuo 0 iki 2*pi
+x2 = linspace(0, 2*pi, 10);
+
+% sin – apskaičiuoja sinuso reikšmes
+y2 = sin(x2);
+
+% size – parodo vektoriaus dydį
+dydis = size(x2);
+
+% max – randa didžiausią reikšmę
+didziausia = max(y2);
+
+
+%% Papildomi pavyzdžiai
+
+% Sukuriamas 3 x 3 masyvas
+A = [1 2 3; 4 5 6; 7 8 9];
+
+% Matricos dydis
+[m,n] = size(A);
+
+% Didžiausia reikšmė kiekviename stulpelyje
+max_stulpeliai = max(A);
+
+% Didžiausia matricos reikšmė
+max_reiksme = max(A(:));
